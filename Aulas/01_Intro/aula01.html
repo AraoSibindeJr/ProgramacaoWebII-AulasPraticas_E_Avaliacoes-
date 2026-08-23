@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula01</title>
+  </head>
+  <body>
+    <h1>Aula 01: Separation of Concerns(Soc)</h1>
+    <p>
+      Separar um sistema em partes, onde cada parte trata de uma
+      responsabilidade específica. Uma responsabilidade = uma preocupação
+      (concern) que pode evoluir ou mudar independentemente. O objetivo não é
+      criar mais elementos: é reduzir dependências desnecessárias.
+    </p>
+    <h2>Soc em diferentes niveis</h2>
+    <ul>
+      <li><b>Arquitetura</b> → Separa grandes responsabilidades do sistema</li>
+      <li>
+        <b>Camadas</b> → Separa apresentação, aplicação, domínio e
+        infraestrutura
+      </li>
+      <li><b>Módulos</b> → Agrupa funcionalidades relacionadas</li>
+      <li>
+        <b>Classes/funções</b> → Cada unidade tem uma responsabilidade clara
+      </li>
+      <li>
+        <b>Código</b> → Evita misturar lógica, acesso a dados e apresentação
+      </li>
+    </ul>
+    <h2>Arquitetura em Camadas</h2>
+    <ol>
+      <li><b>Presentation / UI:</b> Recebe pedidos e apresenta resultados</li>
+      <li><b>Application / Services:</b> Coordena casos de uso</li>
+      <li><b>Domain / Business:</b> Regras e conceitos do negócio</li>
+      <li>
+        <b>Infrastructure / Data:</b> Base de dados, APIs, ficheiros, serviços
+        externos
+      </li>
+    </ol>
+    <h2>Beneficios</h2>
+    <ul>
+      <li>Manutenção mais fácil</li>
+      <li>Testes mais simples</li>
+      <li>Menor impacto das mudanças</li>
+      <li>Código mais reutilizável</li>
+      <li>Equipas podem trabalhar em partes diferentes</li>
+      <li>Mais fácil substituir tecnologias</li>
+      <li>Problemas são mais fáceis de localizar</li>
+    </ul>
+    <h2>Concluindo</h2>
+    <p>
+      Separation of Concerns é uma forma de controlar complexidade. Aplica-se à
+      arquitetura, aos modelos, aos módulos, às classes e às funções. Boa
+      separação cria componentes coesos e pouco acoplados.
+    </p>
+    <q
+      >A melhor arquitetura não é a que tem mais camadas — é a que torna as
+      mudanças mais previsíveis.</q
+    >
+  </body>
+</html>
