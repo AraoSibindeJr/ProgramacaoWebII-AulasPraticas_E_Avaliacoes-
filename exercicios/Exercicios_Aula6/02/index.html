@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Clientes</h1>
+      <div class="subhead">Preencha os dados e cadastre</div>
+
+      <form id="cadastroForm" class="form-grid" novalidate>
+        <div class="field-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" autocomplete="off" />
+          <div class="error-msg" id="nomeError"></div>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" autocomplete="off" />
+          <div class="error-msg" id="emailError"></div>
+        </div>
+
+        <div class="field-group">
+          <label for="idade">Idade</label>
+          <input type="number" id="idade" min="0" max="130" />
+          <div class="error-msg" id="idadeError"></div>
+        </div>
+
+        <div class="field-group">
+          <label for="senha">Senha (mín. 6 caracteres)</label>
+          <input type="password" id="senha" />
+          <div class="error-msg" id="senhaError"></div>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn" id="cadastrarBtn">Cadastrar</button>
+          <button type="button" class="btn btn-secondary" id="limparBtn">
+            Limpar tudo
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="scritpt.js"></script>
+  </body>
+</html>
